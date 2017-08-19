@@ -1,8 +1,8 @@
 language: csharp
+dist: trusty
 sudo: required 
 mono: none
 dotnet: 2.0
-dist: trusty
 script:
  - dotnet restore
  - dotnet test
