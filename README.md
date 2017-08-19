@@ -1,0 +1,1 @@
+This is perfect Hello World app for CI .net core
