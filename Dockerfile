@@ -1,5 +1,5 @@
 FROM microsoft/aspnetcore-build
-# as build-env
+AS build-env
 WORKDIR /app
 
 # copy everything else and build
