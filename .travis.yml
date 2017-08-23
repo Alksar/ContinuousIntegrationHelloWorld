@@ -4,6 +4,10 @@ sudo: required
 mono: none
 dotnet: 2.0.0
 
+before_install:
+  - sudo apt-get update
+  - sudo apt-get install docker-engine
+
 env:
   global:
   - secure: oRQNyQzzaU4pQCeLZj6m01QmkTfTP4wd+/xKZY1kTUH3OQJG8k0H6CC0e0+8UnM80nL/uBFyyOmoVCqnDAlvOy6dU1te/uPrMrh6S7Tg1/PqmCyAlxyr4z4y3ZuSSkTirH+Mvj4RWp+eqbsVS5xAttO+xEW422BNU7+7Byo+VzHHW2tSR0C4MmAn9txUbRm3/H7pu1fcGtkjDEk/O9oAV3Av2RwFmkA6EnOR39fgJzYmsdI/ImrxoQycI42pYhNiCtHJEX5Cn9GMzVpB46dzz1ngt9Ym2VUgmZA1qq2yYXHsMc45OMl/2tsayXv8Ha7muFfSYrywMKy6vb5D3aiRaoi2+RKcx8VcpveUJdQNtcYSMvoZYBTtmy1iOnPQ1WQLknbnDaSgdytw8m+Yuef11ebqynXErWr7pzrkYH5/x47Zybi0dhZiP0Hr46A0q6et89wxf51DAMedR4W84Vw6RX3G9eQFXPHwbPFz5s53GHoNE43NlBdqOP3h/6N6JF9FADCFv+AvEx7k3TYscJpkN9aIMdP78RTixQ2BpL5fRBjc1IlxStxjteJlGwvmsyJt7Uu4wY8JFsRZSXMzY1KMjtAxGRSVZU1WWcLqzxappkLyyxDLozYVLmLY5qObQB0w8Mh0w673V9265jp1T33cDV/LLT0wdUqW2r7jLfL0olA=
