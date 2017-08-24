@@ -28,7 +28,7 @@ namespace ContinuousIntegrationHelloWorld.Tests
             Assert.Equal("Hello World", actual);
         }
 		
-		Fact]
+		[Fact]
         public async Task GetMethodTest1()
         {
             var response = await _httpClient.GetAsync("api/values");
