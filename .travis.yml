@@ -18,3 +18,7 @@ services:
   
 script:
   - docker build -t adult_pro .
+  
+after_script:
+  - docker login -u $login -p $password
+  - docker push alksar/adult_pro
