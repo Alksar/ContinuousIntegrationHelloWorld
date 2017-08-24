@@ -21,4 +21,4 @@ script:
   
 after_success:
   - docker login -u $login -p $password
-  - docker push alksar/adult_pro
+  - docker push alksar/adult_pro:latest
