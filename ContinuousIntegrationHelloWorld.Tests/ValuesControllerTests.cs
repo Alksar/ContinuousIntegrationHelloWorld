@@ -27,25 +27,5 @@ namespace ContinuousIntegrationHelloWorld.Tests
 
             Assert.Equal("Hello World", actual);
         }
-		
-		[Fact]
-        public async Task GetMethodTest1()
-        {
-            var response = await _httpClient.GetAsync("api/values");
-            response.EnsureSuccessStatusCode();
-            string actual = await response.Content.ReadAsStringAsync();
-
-            Assert.Equal("Hello World1", actual);
-        }
-		
-		[Fact]
-        public async Task GetMethodTest2()
-        {
-            var response = await _httpClient.GetAsync("api/values");
-            response.EnsureSuccessStatusCode();
-            string actual = await response.Content.ReadAsStringAsync();
-
-            Assert.Equal("Hello World2", actual);
-        }
     }
 }
